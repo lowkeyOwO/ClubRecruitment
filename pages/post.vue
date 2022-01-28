@@ -19,7 +19,7 @@
       v-model="title"
       name=""
       placeholder="Title"
-      class="w-72 border-black border-2 rounded-xl p-4 h-12 text-center "
+      class="w-72 border-black border-2 rounded-xl p-4 h-12 text-center"
     />
     <div class="wrapper">
       <textarea
@@ -71,10 +71,24 @@ export default {
     }
   },
   methods: {
-    createPost() {
+    async createPost() {
       if (!this.title || !this.content || !this.link || !this.image)
         return this.$toast.global.missing()
-      return this.$toast.global.success()
+      else {
+        console.log(this.title)
+      
+        const a = await this.$axios.post('http://localhost:3001/posts', {
+          data: {
+            title: this.title,
+            content: this.content,
+            link: this.link,
+            image: this.image,
+            time: Date.now()
+          },
+        })
+        
+        return this.$toast.global.success()
+      }
     },
   },
 }
