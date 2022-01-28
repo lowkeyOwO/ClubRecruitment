@@ -73,12 +73,12 @@ export default {
       if (passwords.president_username_arr.includes(this.username)) {
         const ind = passwords.president_username_arr.indexOf(this.username)
         if (passwords.president_password_arr[ind] === this.password) {
-          this.$router.push('/homepage')
+          this.$router.push('/presidenthomepage')
         } else alert("username and password don't match")
       } else if (passwords.student_username_arr.includes(this.username)) {
         const ind = passwords.student_username_arr.indexOf(this.username)
         if (passwords.student_password_arr[ind] === this.password) {
-          console.log('This is printed.')
+          this.$router.push('/studenthomepage')
         } else alert("username and password don't match")
       } else alert("account doesn't exist")
     },
