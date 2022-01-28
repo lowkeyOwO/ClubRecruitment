@@ -19,7 +19,7 @@
       v-model="title"
       name=""
       placeholder="Title"
-      class="w-72 border-black border-2 rounded-xl p-4 h-12 text-center"
+      class="w-72 border-black border-2 rounded-xl p-4 h-12 text-center "
     />
     <div class="wrapper">
       <textarea
@@ -56,7 +56,7 @@
       "
       @click="createPost"
     >
-      Login
+      Submit
     </button>
   </div>
 </template>
