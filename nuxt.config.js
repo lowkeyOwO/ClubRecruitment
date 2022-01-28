@@ -35,7 +35,22 @@ export default {
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
+        // https://go.nuxtjs.dev/toast
+        '@nuxtjs/toast'
     ],
+
+    toast: {
+        position: 'bottom-right',
+        register: [{
+            name: 'success',
+            message: 'Form submitted successfully!',
+            options: {
+                type: 'info',
+                duration: 5000,
+                class: 'rounded-xl',
+            },
+        }, ],
+    },
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {

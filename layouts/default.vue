@@ -5,8 +5,7 @@
       min-h-screen
       font-montserrat
       tracking-wide
-      bg-white
-      dark:bg-zinc-900
+      bg-zinc-900
       text-zinc-600
       dark:text-zinc-300
     "

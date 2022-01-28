@@ -1,5 +1,5 @@
 <template>
     <div>
-        Lokesh sucks at sucking
+        Content for pages
     </div>
 </template>
