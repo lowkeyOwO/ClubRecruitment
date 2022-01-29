@@ -39,6 +39,7 @@
         placeholder="Password"
         v-model="password"
       />
+
       <button
         class="
           bg-gray-700
@@ -71,12 +72,12 @@ export default {
   methods: {
     LoginCheck() {
       if (passwords.president_username_arr.includes(this.username)) {
-        const ind = passwords.president_username_arr.indexOf(this.username)
+        let ind = passwords.president_username_arr.indexOf(this.username)
         if (passwords.president_password_arr[ind] === this.password) {
           this.$router.push('/presidenthomepage')
         } else alert("username and password don't match")
       } else if (passwords.student_username_arr.includes(this.username)) {
-        const ind = passwords.student_username_arr.indexOf(this.username)
+        let ind = passwords.student_username_arr.indexOf(this.username)
         if (passwords.student_password_arr[ind] === this.password) {
           this.$router.push('/studenthomepage')
         } else alert("username and password don't match")

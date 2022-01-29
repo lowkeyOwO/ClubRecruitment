@@ -75,17 +75,12 @@ export default {
       if (!this.title || !this.content || !this.link || !this.image)
         return this.$toast.global.missing()
       else {
-        /*console.log(this.title)
-      
-        const a = await this.$axios.post('http://localhost:3001/posts', {
-          data: {
-            title: this.title,
-            content: this.content,
-            link: this.link,
-            image: this.image,
-            time: Date.now()
-          },
-        })*/
+         const post = {title: this.title,
+                       content: this.content,
+                       link: this.link,
+                       image: this.image
+                       }
+         
         
         this.$toast.global.success()
         return this.$router.push('/homepage')

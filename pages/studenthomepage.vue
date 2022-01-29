@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="item in posts" :key="item.title" class="p-4">
+    <div v-for="item in posts" :key="item.title" class="p-10">
       <CollectionCard
         :title="item.title"
         :description="item.description"
@@ -14,17 +14,17 @@
 <script>
 const posts = [
   {
-    title: 'never gonna give you up',
-    content: 'never gonna give you up',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    image: 'https://i.insider.com/61135525ad63f30019501966?width=700',
+    title: 'Forese',
+    description: 'FORESE is a student-run forum and an extension of the Placement cell.',
+    link: 'https://www.forese.co.in/',
+    image: 'https://www.forese.co.in/assets/images/logo/logo.png',
     time: 1643389348857
   },
   {
-    title: '111',
-    content: '111',
-    link: '111',
-    image: '111',
+    title: 'Rotaract Club of SVCE',
+    description: 'Rotaract clubs bring together people ages 18 and older to exchange ideas with leaders in the community, develop leadership and professional skills, and have fun through service.',
+    link: 'https://www.rotary.org/',
+    image: 'https://www.rotary.org/sites/all/themes/rotary_rotaryorg/images/rotary-logo-color-2019-simplified.svg',
     time: 1643389341529
   }
 ]

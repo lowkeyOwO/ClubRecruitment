@@ -1,3 +1,3 @@
 <template>
-    <div>aaaaaaaaaa</div>
+    <div>CRISIS! ABORT</div>
 </template>
